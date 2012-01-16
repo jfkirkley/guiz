@@ -709,7 +709,7 @@ var tabTuningArray = [];
 var tabToolArray = [];
 var currTabIndex = 0;
 //var tabURLPATH = "/itabs/sites/newGuizzard/get.php?id=";
-var tabURLPATH = "/get.php?id=";
+var tabURLPATH = "/guiz/get.php?id=";
 
 
 
