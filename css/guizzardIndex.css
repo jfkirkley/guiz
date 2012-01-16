@@ -1,0 +1,61 @@
+
+
+	  .tabClass button { 
+		  font-size: 8px; 
+	  }
+
+	  #indexTab { 
+		  height: 600px;
+	  }
+
+	  .outerDiv { 
+	      padding-top: 10px;
+	      padding-left: 30px;
+	      margin-left: 40px;
+	      margin-top: 30px;
+	  }
+
+	  .divHeader {
+	  width: 700px; 
+	  border: 6px solid rgb(102, 102, 102); 
+	  padding: 20px 50px 50px 20px; 
+	  -moz-border-radius: 15px 15px 15px 15px; 
+	  font-family: -moz-use-system-font; 
+	  font-style: -moz-use-system-font; 
+	  font-variant: -moz-use-system-font; 
+	  font-weight: -moz-use-system-font; 
+	  font-size: 14px; 
+	  line-height: -moz-use-system-font; 
+	  font-size-adjust: -moz-use-system-font; 
+	  font-stretch: -moz-use-system-font;
+	  }
+
+	  .ulwrap {
+	  width: 360px; 
+	  border: 1px solid rgb(0, 0, 0); 
+	  padding: 50px; 
+	  -moz-border-radius: 8px 8px 8px 8px; 
+	  font-family: -moz-use-system-font; 
+	  font-style: -moz-use-system-font; 
+	  font-variant: -moz-use-system-font; 
+	  font-weight: -moz-use-system-font; 
+	  font-size: 12px; 
+	  line-height: -moz-use-system-font; 
+	  font-size-adjust: -moz-use-system-font; 
+	  font-stretch: -moz-use-system-font;
+	  }
+
+	  .adwrap {
+	  width: 160px; 
+	  border: 1px solid rgb(0, 0, 0); 
+	  padding: 50px; 
+	  -moz-border-radius: 8px 8px 8px 8px; 
+	  font-family: -moz-use-system-font; 
+	  font-style: -moz-use-system-font; 
+	  font-variant: -moz-use-system-font; 
+	  font-weight: -moz-use-system-font; 
+	  font-size: 12px; 
+	  line-height: -moz-use-system-font; 
+	  font-size-adjust: -moz-use-system-font; 
+	  font-stretch: -moz-use-system-font;
+	  }

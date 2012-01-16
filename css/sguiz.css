@@ -1,0 +1,167 @@
+	  #pointer, #startLoopIcon, #endLoopIcon {
+	  position: absolute;
+/*	  display: none;*/
+	  width: 12px;
+	  height: 200px;
+	  top: 100px;
+	  left: 10px;
+      opacity: .5;               /* Standard style for transparency */
+      -moz-opacity: .5;          /* Transparency for older Mozillas */
+	  z-index: 5;
+
+	  }
+
+	  #adArea {
+	  height: 100px;
+	  }
+
+	  #pointer {
+	  background: #2a2;
+	  }
+
+	  #startLoopIcon {
+	  background: #a22;
+	  }
+
+	  #endLoopIcon {
+	  background: #22a;
+	  }
+
+	#songHeader {
+/*	  height: 24px;
+	  padding: 4px;
+	  width: 912px;*/
+	  margin-top: 2px;
+	}
+
+	#songName {
+		font-size: 14px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#artistName {
+		font-size: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#affiliateButton {
+		float: right;
+
+	}
+
+
+
+	  #play {
+/*	  background: -moz-linear-gradient(top, #55aaee, #003366);*/
+	  }
+/*
+	  .hstringall {
+	  width: 1000px;
+	  height: 4px;
+	  }
+	  .vstringall {
+	  height: 1000px;
+	  width: 4px;
+	  }
+*/
+	  .hstring {
+	  position: 'absolute';
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555', endColorstr='#ddd'); /* for IE */
+	  background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#ddd)); /* for webkit browsers */	  
+	  background: -moz-linear-gradient(bottom, #555, #ddd);
+	  z-index: 15;
+	  }
+	  .vstring {
+	  position: 'absolute';
+	  background: -webkit-linear-gradient(right, #555, #ddd); /* for webkit browsers */	  
+	  background: -moz-linear-gradient(right, #555, #ddd);
+/*	  background: #000;*/
+	  z-index: 15;
+	  }
+
+	  #dots {
+	  position: 'absolute';
+	  }
+
+	  #header {
+	  margin-bottom: 4px;
+	  height: 160px;
+	  }
+
+	  #controlBar {
+/*	  padding-top: 5px;*/
+	  }
+
+	  #dots div {
+	  position: 'absolute';
+	  width:  18px;
+	  z-index: 15;
+	  }
+
+/*	  #stringView {
+	  position: absolute;
+	  top: 6px;
+	  left: 30px;
+	  }*/
+
+	  #theNeck{
+	  z-index: 5;
+/*
+	  padding-top: 5px;
+	  top: 40px;
+	  left: 30px;
+*/
+	  }
+
+	  .tabView {
+/*	  top: 170px;
+	  left: 5px;*/
+	  height: 490px;
+	  width: 880px;
+
+	  overflow: auto;
+	  border: 1px solid #666;
+	  background-color: #ccc;
+	  /*padding: 8px;*/
+	  }
+
+	  .tabView, .tabView * {
+	  z-index: 1;
+	  }
+
+/*
+	  * {
+	  z-index: 5;
+	  }
+
+	  #tabViewScrollDiv {
+	  z-index: 0;
+	  }
+*/
+	  #tabtab {
+	  width: 912px;
+	  }
+
+	  #tempoSlider {
+	  width: 180px;
+	  margin: 8px;
+	  }
+
+	  #theNeckVert  {
+	  padding-top: 30px;
+	  }
+
+	  #mainViewTable  {
+	  height: 700px;
+	  }
+/*	  #toggleNeckView  {
+	  position: absolute;
+	  height: 18px;
+	  width:  18px;
+	  }
+*/
+
+/*	  #theNeckVert img{
+	  block: none;
+	  z-index: 1;
+	  }*/
