@@ -7,9 +7,9 @@ var BrowserDetect = {
 		this.OS = this.searchString(this.dataOS) || "an unknown OS";
 
 	if(this.browser !== "Firefox" ) {
-	    alert("For audio support and best performance please use Firefox 4+");
+	    showDialog("For audio support and best performance please use Firefox 4+");
 	} else if( this.version < 4 ) {
-	    alert("For audio support and best performance please use Firefox 4+");
+	    showDialog("For audio support and best performance please use Firefox 4+");
 	}
 },
 	searchString: function (data) {

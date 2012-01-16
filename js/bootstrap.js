@@ -718,9 +718,8 @@ var tabURLPATH = "/guiz/get.php?id=";
 $(document).ready(
 	function(){
 
-
-
-
+		//$("#startLoopIcon").hide();
+		//$("#endLoopIcon").hide();
 
 		var queryParams = getUrlVars();
 		consolewrp.log( "queryParams: " + queryParams.tab );
@@ -888,12 +887,14 @@ $(document).ready(
 
 		$("#dots div").toggle();
 
+		$("#all").hide();
 
 		//if(false){
 
 		$.getScript(
 					tabURLPATH  + queryParams.tab + "&fileName=Meta.js",
 					function(){
+						$("#all").show();
 						setTitleInfo();
 						
 						for(; tabCount < metaInfo.numTracks; ++tabCount){
@@ -1066,5 +1067,5 @@ $(document).ready(
 
 		$(window).resize(function() { scrollBarPresent = isThereAScrollBar(); });
 
-
+		
 	});

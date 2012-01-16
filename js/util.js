@@ -1,5 +1,15 @@
-//var rootPath = "/itabs/sites/newGuizzard/index/";
 var rootPath = "/";
+
+function showDialog(msg) {
+	$("#msgdialog").empty().append("<p><b>" + msg + "</b></p>");
+	$("#msgdialog").dialog({
+			modal: true,
+			buttons: {
+				Ok: function() {
+					$( this ).dialog( "close" );
+				}
+			}});
+}
 
 //function to append a new theme stylesheet with the new style changes
 function updateCSS(locStr){
