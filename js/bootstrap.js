@@ -843,7 +843,7 @@ $(document).ready(
 						 if(tabTool == "none") {
 							 tabTool = "init";
 							 var jsonFile= queryParams.type == "scoreAndTab" ? "TS0.js" : queryParams.type == "score" ? "S0.js": "T0.js";
-							 $.getScript(//"/itabs/sites/newGuizzard/itabs" + queryParams.tab + "/" + jsonFile, 
+							 $.getScript(
 								 tabURLPATH + queryParams.tab + "&fileName=" + jsonFile,
 
 								 function(){
@@ -855,54 +855,27 @@ $(document).ready(
 									 tabToolArray[currTabIndex] = tabTool;
 
 									 sv.rotate();
-									 //sv.rotate();
+									 BrowserDetect.init();
 
-									 //tabTool.toggleplay();
 
 								 });
 						 } 
 						 if(metaInfo.numTracks-1 == tabCount) {
 							 var tabH = tabtab.height();
 							 var tabTop = tabtab.offset().top;
-							 //var header = $('#header').height();
-							 //consolewrp.log( "header: " + header );
-							//var tnh = $('#theNeck').height();
-							 //consolewrp.log( "tnh: " + tnh );
-								 //var sh = $('#songHeader').height();
-							 //consolewrp.log( "sh: " + sh );
-							//	 var cbh =  $('#controlBar').height();// +  + $('#').height() +  + $('#').height() + 
-							 //consolewrp.log( "cbh: " + cbh );
-							 //tabTop = $('#header').height() + $('#theNeck').height() +  + $('#songHeader').height() +  $('#controlBar').height();// +  + $('#').height() +  + $('#').height() + 
-							 tabTop = $('#header').height() + 135 +  + $('#songHeader').height() +  $('#controlBar').height();// +  + $('#').height() +  + $('#').height() + 
+
+							 tabTop = $('#header').height() + 135 +  + $('#songHeader').height() +  $('#controlBar').height();
 							 tabDimensions.diff = $(".tabView", tabtab.get(0)).offset().top - tabtab.offset().top + 30;
-							 //consolewrp.log( "diff: " + diff );
 
 							 var viewportWidth = $(window).width();
 
 							 var viewportHeight = $(window).height();
 							 var tabHeight = viewportHeight - tabTop - 150;
-							 //consolewrp.log( "viewportHeight: " + viewportHeight );
-							 //consolewrp.log( "tabTop        :  " + tabTop );
-							 consolewrp.log( "tabHeight     :  " + tabHeight );
-							 //consolewrp.log( "pageHeight: " + tabDimensions.pageHeight );
 
 							 tabtab.height(tabHeight + "px");
-							 //var diff = viewportHeight - (tabTop + tabH + 20);
-
-							 //consolewrp.log( "diff: " + diff  + ": " + (tabH+diff)+"px");
-
-							 //$(".tabView").height((500+diff)+"px");
-
-							 //tabDimensions.pageHeight += diff;
-							 //tabDimensions.maxViewableHeight += diff;
 							 tabDimensions.pageHeight = tabHeight - tabDimensions.diff;
 							 tabDimensions.maxViewableHeight = tabHeight - tabDimensions.diff;
 
-							 //tabtab.height((tabH+diff)+"px");
-
-							 consolewrp.log( "tabH: " + tabH + " :: " + screen.height );
-
-							 
 							 
 						 }
 
@@ -918,14 +891,9 @@ $(document).ready(
 
 		//if(false){
 
-
-
-		$.getScript(//"/itabs/sites/newGuizzard/itabs" + queryParams.tab + "/Meta.js", 
+		$.getScript(
 					tabURLPATH  + queryParams.tab + "&fileName=Meta.js",
 					function(){
-						//consolewrp.log( "song: " + metaInfo.SongName );
-						//consolewrp.log( "song: " + metaInfo.numTracks );
-
 						setTitleInfo();
 						
 						for(; tabCount < metaInfo.numTracks; ++tabCount){
@@ -1097,8 +1065,6 @@ $(document).ready(
 		scrollBarPresent = isThereAScrollBar();
 
 		$(window).resize(function() { scrollBarPresent = isThereAScrollBar(); });
-		BrowserDetect.init();
-		//consolewrp.log( "BrowserDetect: " + BrowserDetect.browser + ": " + BrowserDetect.version );
-		//initSound();
+
 
 	});
