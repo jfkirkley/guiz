@@ -190,7 +190,7 @@ $(document).ready(
 					}
 				}
 			});
-		BrowserDetect.init();
+		//BrowserDetect.init();
 
 	});
 //http://localhost
