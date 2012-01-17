@@ -98,7 +98,8 @@ $(document).ready(
 		var tabCount = 0;
 
 		if(!queryParams.id){
-			window.location = "http://guizzard.com/guiz.html?tab=pgf&type=scoreAndTab&id=l/l48&artist=Led%20Zeppelin&song=Stairway%20To%20Heaven";
+			//window.location = "http://guizzard.com/guiz.html?tab=pgf&type=scoreAndTab&id=l/l48&artist=Led%20Zeppelin&song=Stairway%20To%20Heaven";
+			window.location = "http://guizzard.com/guiz.html?tab=lyf&type=scoreAndTab&id=p/p127&artist=Pink%20Floyd&song=Wish%20You%20Were%20Here";
 		}
 		var jsId = queryParams.id? queryParams.id: "front.js";
 		//$.getScript(rootDir  + "js/indices/" + queryParams.id,
